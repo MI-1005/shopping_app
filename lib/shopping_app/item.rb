@@ -1,4 +1,7 @@
+require_relative "ownable" #====追加======
+
 class Item
+  include Ownable #====追加======
   attr_reader :number, :name, :price
 
   @@instances = []
